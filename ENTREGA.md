@@ -1,77 +1,10 @@
 # Entrega - Sawy Tostadero Ruta 9
 
-## Que mirar primero
+## Conclusion
 
-1. Abrir el dashboard publicado:
+El negocio vende y genera margen bruto, pero en el semestre analizado el resultado operativo queda levemente negativo. El problema no parece ser solamente vender mas, sino vender mejor: revisar descuentos, flete absorbido, mix de productos y condiciones comerciales en los segmentos donde el margen queda mas ajustado.
 
-```text
-https://franferraro.github.io/Sawy-TostaderoRuta9/
-```
-
-2. Para revision local en macOS, abrir con doble click:
-
-```text
-abrir_dashboard.command
-```
-
-Ese archivo regenera los datos, levanta el servidor local y abre la herramienta.
-
-Alternativa manual desde terminal:
-
-```bash
-./abrir_dashboard.command
-```
-
-3. Si se quiere correr paso a paso, regenerar datos y herramienta:
-
-```bash
-python3 run_all.py
-```
-
-4. Levantar un servidor local:
-
-```bash
-python3 -m http.server 8000
-```
-
-5. Abrir la herramienta:
-
-```text
-http://localhost:8000/app_runtime/index.html
-```
-
-Snapshot opcional en macOS, sin servidor local:
-
-```bash
-open app/index.html
-```
-
-6. Recorrer estas pestañas:
-
-- `Diagnostico`: estado general del negocio.
-- `Acciones`: medidas recomendadas y alertas por nivel.
-- `Canales y productos`: rentabilidad por canal y producto.
-- `Clientes`: clientes prioritarios y otros clientes a monitorear.
-- `Metodo`: pipeline, supuestos y glosario.
-
-## Como correrlo
-
-Desde el directorio de la entrega:
-
-```bash
-python3 run_all.py
-```
-
-Eso genera:
-
-```text
-data/stage/
-data/clean/
-data/reports/
-app_runtime/index.html
-```
-
-No requiere instalar dependencias externas.
+La oportunidad principal esta en ordenar la conversacion de negocio: entender que canales, productos y clientes sostienen el margen, y cuales conviene revisar antes de seguir empujando volumen.
 
 ## Enfoque
 
@@ -81,7 +14,9 @@ La solucion sigue este flujo:
 RAW -> stage -> clean -> Reports -> app_runtime
 ```
 
-La idea fue no empezar por graficos. Primero se preservan los datos originales, despues se tipan y validan, luego se aplican reglas de negocio y recien al final se construye una herramienta para que Sofia pueda decidir. La herramienta principal consume `data/reports/*.csv`, no los exports crudos.
+La idea fue no empezar por graficos. Primero se preservan los datos originales, despues se tipan y validan, luego se aplican reglas de negocio y recien al final se construye una herramienta para decidir.
+
+La visualizacion principal consume `data/reports/*.csv`, no los exports crudos. Eso separa la limpieza/modelado de la capa de visualizacion y deja una salida analitica reutilizable.
 
 ## Hallazgos principales
 
@@ -136,3 +71,36 @@ Es margen bruto. No representa rentabilidad final despues de todos los gastos.
 Las recomendaciones actuales salen de reglas de negocio codificadas sobre los reportes.
 
 Esto es intencional: primero se prioriza trazabilidad. Con una capa de IA integrada, estas recomendaciones podrian redactarse dinamicamente o responder repreguntas, manteniendo los calculos como base confiable.
+
+Acciones sugeridas desde el analisis:
+
+- Revisar condiciones de Granos del Sur y del canal distribuidor.
+- Revisar la arquitectura de precios del Blend Casa, especialmente caja x6 contra unidades de 1 kg.
+- Empujar canales y productos con mejor margen bruto.
+- Usar las alertas por cliente para priorizar conversaciones comerciales.
+
+## Como replicarlo localmente
+
+Desde la raiz del repo:
+
+```bash
+python3 run_all.py
+python3 -m http.server 8000
+```
+
+Abrir:
+
+```text
+http://localhost:8000/app_runtime/index.html
+```
+
+El comando `run_all.py` regenera:
+
+```text
+data/stage/
+data/clean/
+data/reports/
+site/dist/
+```
+
+No requiere instalar dependencias externas.
