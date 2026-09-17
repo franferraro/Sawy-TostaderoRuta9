@@ -1,0 +1,10 @@
+check_name,status,table_name,records_affected,details
+parse_ventas,OK,stage_ventas,0,Fechas y numericos parseados correctamente.
+tipo_comprobante_valido,OK,stage_ventas,0,Solo se esperan FAC y NC.
+importe_reconciliado,OK,stage_ventas,0,Tolerancia usada: 0.10 ARS.
+parse_productos,OK,stage_productos,0,Numericos parseados correctamente.
+activo_valido,OK,stage_productos,0,Solo se esperan S o N.
+parse_clientes,OK,stage_clientes,0,Numericos parseados correctamente.
+parse_costos,OK,stage_costos,0,Periodos y numericos parseados correctamente.
+moneda_costos,OK,stage_costos,0,Se espera ARS.
+parse_gastos_operativos,OK,stage_gastos_operativos,0,Periodos y numericos parseados correctamente.

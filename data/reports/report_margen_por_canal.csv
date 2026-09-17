@@ -1,0 +1,5 @@
+condicion_comercial,unidades,ventas_netas,costo_total,margen_bruto,margen_bruto_pct,precio_venta_promedio,costo_unitario_promedio,participacion_ventas_pct,notas_credito,importe_notas_credito,alerta_margen,accion_sugerida
+Ecommerce,4180.00,32659850.64,14738397.00,17921453.64,0.5487,7813.36,3525.93,0.2710,0,0.00,,
+Mayorista,3132.00,34092418.60,27503213.00,6589205.60,0.1933,10885.19,8781.36,0.2829,31,-1123984.16,MEDIUM,Revisar escala de descuentos y condiciones por volumen.
+Local,1187.00,11102141.30,5400277.00,5701864.30,0.5136,9353.11,4549.52,0.0921,0,0.00,,
+Distribuidor,2826.00,42646182.95,39420328.00,3225854.95,0.0756,15090.65,13949.16,0.3539,13,-1252938.40,HIGH,"Renegociar descuento, precio minimo y flete absorbido del canal."

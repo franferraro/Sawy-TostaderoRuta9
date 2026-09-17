@@ -1,0 +1,6 @@
+metrica,valor,detalle
+ventas_netas,120500593.49,Facturacion neta de notas de credito.
+margen_bruto,33438378.49,Margen bruto total. Margen sobre ventas: 0.2775.
+gastos_operativos,34511491.00,"Gastos informados por Sofia, sin asignacion a producto."
+resultado_operativo,-1073112.51,Margen bruto menos gastos operativos. Resultado sobre ventas: -0.0089.
+costo_total,87062215.00,Costo total calculado por producto y periodo.

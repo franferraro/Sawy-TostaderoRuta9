@@ -1,0 +1,2 @@
+tipo_alerta,severidad,entidad,periodo,descripcion,cantidad_registros,accion_sugerida
+codigo_producto_normalizado,INFO,BLEND1K -> CAF-BLEND-1K,,Se normalizaron 28 lineas de venta con codigo viejo.,28,Conservar codigo original para auditoria y usar codigo normalizado para margen.
