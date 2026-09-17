@@ -18,7 +18,7 @@ La idea fue no empezar por graficos. Primero se preservan los datos originales, 
 
 La visualizacion principal consume `data/reports/*.csv`, no los exports crudos. Eso separa la limpieza/modelado de la capa de visualizacion y deja una salida analitica reutilizable.
 
-## Que se reutiliza y que se adapta
+## Que se reutiliza y que se adapta (Punto 2)
 
 Si el mes que viene entra otro cliente, de otro rubro y con otro sistema de gestion, reutilizaria la forma de trabajo mas que las reglas puntuales.
 
