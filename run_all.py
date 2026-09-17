@@ -19,7 +19,6 @@ def main() -> None:
     run_step("etl/02_build_clean.py")
     run_step("etl/03_build_reports.py")
     run_step("app/build_visibility.py")
-    shutil.copyfile(CASE_DIR / "app" / "index.html", CASE_DIR / "Sawy-TostaderoRuta9.html")
     site_dir = CASE_DIR / "site"
     if site_dir.exists():
         reports_target = site_dir / "dist" / "data" / "reports"

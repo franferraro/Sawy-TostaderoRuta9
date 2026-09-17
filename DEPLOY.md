@@ -55,5 +55,5 @@ site/dist
 Una vez subido a GitHub, el link queda con este formato:
 
 ```text
-https://<usuario-github>.github.io/<nombre-repo>/
+https://franferraro.github.io/Sawy-TostaderoRuta9/
 ```

@@ -5,7 +5,7 @@
 1. Abrir el dashboard publicado:
 
 ```text
-https://<usuario-github>.github.io/<nombre-repo>/
+https://franferraro.github.io/Sawy-TostaderoRuta9/
 ```
 
 2. Para revision local en macOS, abrir con doble click:
@@ -143,4 +143,6 @@ Esto es intencional: primero se prioriza trazabilidad. Con una capa de IA integr
 - Llevar el pipeline a S3 + Glue/Athena.
 - Agregar historico incremental para comparar semanas.
 - Permitir cargar nuevos exports y regenerar la herramienta.
+- Separar impuestos si los importes del ERP mezclan componentes comerciales y fiscales.
+- Cruzar margen con capacidad operativa por canal, porque no todo canal de mayor margen cuesta lo mismo de atender.
 - Definir con el cliente drivers para asignar gastos indirectos si hace falta.
