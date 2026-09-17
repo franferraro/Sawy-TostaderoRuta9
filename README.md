@@ -74,11 +74,6 @@ app_runtime/ y site/dist/
 - Los gastos operativos se analizan a nivel negocio porque no vienen asignados por producto o cliente.
 - El margen por producto, canal y cliente es margen bruto, no resultado final.
 
-## Consideraciones para una siguiente version
-
-- Separar impuestos si el ERP mezcla importes comerciales con IVA, percepciones u otros componentes fiscales.
-- Cruzar margen con capacidad operativa: algunos canales pueden dejar mejor margen, pero requerir mas preparacion, atencion o logistica por pedido.
-
 ## Archivos utiles
 
 - `ENTREGA.md`: resumen ejecutivo de la entrega.
