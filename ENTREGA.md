@@ -18,6 +18,32 @@ La idea fue no empezar por graficos. Primero se preservan los datos originales, 
 
 La visualizacion principal consume `data/reports/*.csv`, no los exports crudos. Eso separa la limpieza/modelado de la capa de visualizacion y deja una salida analitica reutilizable.
 
+## Que se reutiliza y que se adapta
+
+Si el mes que viene entra otro cliente, de otro rubro y con otro sistema de gestion, reutilizaria la forma de trabajo mas que las reglas puntuales.
+
+Sirve tal cual:
+
+- Separar el proceso en `raw/stage/clean/reports`.
+- Preservar los archivos originales como evidencia.
+- Tipar y estandarizar fechas, importes, cantidades y claves.
+- Dejar controles de calidad de datos.
+- Documentar supuestos y decisiones de limpieza.
+- Construir una capa de `reports` que la visualizacion pueda consumir.
+- Separar pipeline de datos y dashboard.
+
+Habria que rehacer o adaptar:
+
+- El mapeo de archivos del nuevo sistema de gestion.
+- Las claves de negocio: productos, clientes, canales, comprobantes.
+- Las reglas propias del rubro.
+- El tratamiento de costos, devoluciones, descuentos e impuestos.
+- Los umbrales de alerta.
+- Las recomendaciones accionables.
+- El lenguaje del dashboard para que tenga sentido para ese cliente.
+
+En resumen: la arquitectura y el criterio de trabajo son reutilizables; las reglas de negocio no deberian copiarse sin validarlas con el cliente.
+
 ## Hallazgos principales
 
 - El negocio vende y genera margen bruto.
