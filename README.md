@@ -13,8 +13,10 @@ La solucion busca transformar archivos operativos desordenados en informacion ac
 Link publicado:
 
 ```text
-https://sawy-tostadero-ruta9.joaco-ferraro2006.chatgpt.site
+https://<usuario-github>.github.io/<nombre-repo>/
 ```
+
+El repo incluye un workflow de GitHub Pages que publica automaticamente la carpeta `site/dist`.
 
 Forma mas simple en macOS:
 
@@ -137,7 +139,7 @@ http://localhost:8000/app_runtime/index.html
 Si se esta parado en la raiz donde se recibio la entrega, primero entrar a la carpeta:
 
 ```bash
-cd Entrega
+cd Repo_Sawy_TostaderoRuta9
 ```
 
 Tambien se puede ejecutar paso a paso:

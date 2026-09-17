@@ -5,7 +5,7 @@
 1. Abrir el dashboard publicado:
 
 ```text
-https://sawy-tostadero-ruta9.joaco-ferraro2006.chatgpt.site
+https://<usuario-github>.github.io/<nombre-repo>/
 ```
 
 2. Para revision local en macOS, abrir con doble click:
