@@ -136,11 +136,3 @@ Es margen bruto. No representa rentabilidad final despues de todos los gastos.
 Las recomendaciones actuales salen de reglas de negocio codificadas sobre los reportes.
 
 Esto es intencional: primero se prioriza trazabilidad. Con una capa de IA integrada, estas recomendaciones podrian redactarse dinamicamente o responder repreguntas, manteniendo los calculos como base confiable.
-
-## Que haria despues
-
-- Agregar una capa de preguntas conversacionales sobre Reports.
-- Llevar el pipeline a S3 + Glue/Athena.
-- Agregar historico incremental para comparar semanas.
-- Permitir cargar nuevos exports y regenerar la herramienta.
-- Definir con el cliente drivers para asignar gastos indirectos si hace falta.
