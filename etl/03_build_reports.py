@@ -80,35 +80,70 @@ def margin_action(
     if not level:
         return ""
     context = context or {}
-    if entity_type == "producto":
-        if level in {"CRITICAL", "HIGH"}:
+    channel = context.get("condicion_comercial", "")
+    sales = metrics["ventas_netas"] if metrics else Decimal("0")
+    credit_notes = metrics["notas_credito"] if metrics else 0
+
+    if level == "SIN_DATOS":
+        return "Completar datos de costo o venta antes de tomar una decision comercial."
+
+    if level == "CRITICAL":
+        if entity_type == "producto":
+            return "Pausar promociones y revisar precio/costo antes de vender mas volumen."
+        if entity_type == "canal":
+            if channel == "Distribuidor":
+                return "Revisar de inmediato descuento, precio minimo y flete absorbido del canal."
+            if channel == "Mayorista":
+                return "Renegociar condiciones del canal antes de sostener volumen."
+            return "Revisar condiciones comerciales del canal antes de seguir empujando ventas."
+        if entity_type == "cliente":
+            if channel == "Distribuidor":
+                return "Agendar renegociacion urgente: descuento, volumen minimo, lista de precios y flete absorbido."
+            if credit_notes:
+                return "Revisar devoluciones y margen antes de renovar condiciones comerciales."
+            return "Llamar esta semana y corregir precio, descuento o mix de productos comprados."
+
+    if level == "HIGH":
+        if entity_type == "producto":
             return "Frenar promociones y revisar precio/costo antes de vender mas volumen."
+        if entity_type == "canal":
+            if channel == "Distribuidor":
+                return "Renegociar descuento, precio minimo y flete absorbido del canal."
+            if channel == "Mayorista":
+                return "Renegociar escala de descuentos y condiciones por volumen."
+            return "Revisar condiciones comerciales del canal."
+        if entity_type == "cliente":
+            if channel == "Distribuidor":
+                return "Agendar renegociacion: revisar descuento, volumen minimo, lista de precios y flete absorbido."
+            if credit_notes:
+                return "Revisar devoluciones y margen antes de renovar condiciones comerciales."
+            return "Llamar esta semana y revisar descuentos o mix de productos comprados."
+
+    if level == "MEDIUM":
+        if entity_type == "producto":
+            return "Monitorear precio y descuento; no empujarlo sin revisar margen."
+        if entity_type == "canal":
+            if channel == "Distribuidor":
+                return "Revisar condiciones del canal antes de empujar mas volumen."
+            if channel == "Mayorista":
+                return "Revisar escala de descuentos y condiciones por volumen."
+            return "Monitorear condiciones comerciales del canal."
+        if entity_type == "cliente":
+            if channel == "Distribuidor":
+                return "Revisar condiciones del cliente antes de renovar descuento o volumen minimo."
+            if credit_notes:
+                return "Revisar devoluciones y rotacion antes de renovar condiciones comerciales."
+            if sales >= Decimal("1000000"):
+                return "Preparar propuesta con menor descuento o mix de productos de mayor margen."
+            if channel == "Mayorista":
+                return "En la proxima reposicion, ofrecer alternativas de mayor margen antes de repetir descuento."
+            return "Monitorear margen antes de ofrecer promociones."
+
+    if entity_type == "producto":
         return "Monitorear precio y descuento; no empujarlo sin revisar margen."
     if entity_type == "canal":
-        channel = context.get("condicion_comercial", "")
-        if channel == "Distribuidor":
-            if level in {"CRITICAL", "HIGH"}:
-                return "Renegociar descuento, precio minimo y flete absorbido del canal."
-            return "Revisar condiciones del canal antes de empujar mas volumen."
-        if channel == "Mayorista":
-            if level in {"CRITICAL", "HIGH"}:
-                return "Renegociar escala de descuentos y condiciones por volumen."
-            return "Revisar escala de descuentos y condiciones por volumen."
         return "Revisar condiciones comerciales del canal."
     if entity_type == "cliente":
-        channel = context.get("condicion_comercial", "")
-        sales = metrics["ventas_netas"] if metrics else Decimal("0")
-        credit_notes = metrics["notas_credito"] if metrics else 0
-        if channel == "Distribuidor":
-            if level in {"CRITICAL", "HIGH"}:
-                return "Agendar renegociacion: revisar descuento, volumen minimo, lista de precios y flete absorbido."
-            return "Revisar condiciones del cliente antes de renovar descuento o volumen minimo."
-        if credit_notes:
-            return "Revisar devoluciones y rotacion antes de renovar condiciones comerciales."
-        if sales >= Decimal("1000000"):
-            return "Preparar propuesta con menor descuento o mix de productos de mayor margen."
-        if level in {"CRITICAL", "HIGH"}:
-            return "Llamar esta semana y revisar descuentos o mix de productos comprados."
         if channel == "Mayorista":
             return "En la proxima reposicion, ofrecer alternativas de mayor margen antes de repetir descuento."
         return "Monitorear margen antes de ofrecer promociones."
