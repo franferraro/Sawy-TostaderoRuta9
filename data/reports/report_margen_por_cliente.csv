@@ -1,44 +1,44 @@
 codigo_cliente,razon_social,condicion_comercial,localidad,unidades,ventas_netas,costo_total,margen_bruto,margen_bruto_pct,precio_venta_promedio,costo_unitario_promedio,participacion_ventas_pct,notas_credito,importe_notas_credito,alerta_margen,accion_sugerida
-C9002,VENTA ONLINE,Ecommerce,,4180.00,32659850.64,14738397.00,17921453.64,0.5487,7813.36,3525.93,0.2710,0,0.00,,
-C9001,CONSUMIDOR FINAL,Local,CABA,1187.00,11102141.30,5400277.00,5701864.30,0.5136,9353.11,4549.52,0.0921,0,0.00,,
 C0001,GRANOS DEL SUR S.A.,Distribuidor,Avellaneda,2826.00,42646182.95,39420328.00,3225854.95,0.0756,15090.65,13949.16,0.3539,13,-1252938.40,HIGH,"Agendar renegociacion: revisar descuento, volumen minimo, lista de precios y flete absorbido."
-C0106,El Almacen de Nunez,Mayorista,CABA,103.00,1156544.21,889679.00,266865.21,0.2307,11228.58,8637.66,0.0096,0,0.00,,
-C0138,El Almacen de Constitucion,Mayorista,CABA,106.00,1183240.09,919406.00,263834.09,0.2230,11162.64,8673.64,0.0098,0,0.00,,
-C0120,Tostado Chacarita,Mayorista,CABA,115.00,1261129.76,1005808.00,255321.76,0.2025,10966.35,8746.16,0.0105,1,-23120.00,,
-C0113,Bar Recoleta II,Mayorista,CABA,86.00,972388.87,748922.00,223466.87,0.2298,11306.85,8708.40,0.0081,1,-62146.80,,
-C0108,Coffee Lab Colegiales,Mayorista,CABA,98.00,1125314.51,904603.00,220711.51,0.1961,11482.80,9230.64,0.0093,1,-36222.71,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
-C0104,Tostado Villa Crespo,Mayorista,CABA,112.00,1194513.40,974159.00,220354.40,0.1845,10665.30,8697.85,0.0099,2,-45674.64,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
-C0137,Panaderia Villa Urquiza II,Mayorista,CABA,89.00,940909.04,723201.00,217708.04,0.2314,10572.01,8125.85,0.0078,1,-25964.53,,
-C0129,Bar San Telmo II,Mayorista,CABA,90.00,1052014.53,834936.00,217078.53,0.2063,11689.05,9277.07,0.0087,1,-49359.47,,
-C0130,Usina Coghlan,Mayorista,CABA,79.00,924777.30,711723.00,213054.30,0.2304,11706.04,9009.15,0.0077,0,0.00,,
-C0125,Usina Flores II,Mayorista,CABA,87.00,897517.01,691521.00,205996.01,0.2295,10316.29,7948.52,0.0074,0,0.00,,
-C0126,Panaderia Parque Chas,Mayorista,CABA,87.00,994538.26,794363.00,200175.26,0.2013,11431.47,9130.61,0.0083,0,0.00,,
-C0133,El Almacen de Barracas II,Mayorista,CABA,102.00,1064368.03,870337.00,194031.03,0.1823,10434.98,8532.72,0.0088,0,0.00,MEDIUM,Preparar propuesta con menor descuento o mix de productos de mayor margen.
-C0101,El Almacen de Palermo II,Mayorista,CABA,102.00,1093361.08,908248.00,185113.08,0.1693,10719.23,8904.39,0.0091,2,-101637.90,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
-C0135,Coffee Lab Agronomia II,Mayorista,CABA,68.00,838888.64,654395.00,184493.64,0.2199,12336.60,9623.46,0.0070,1,-64911.34,,
-C0100,Cafe Palermo,Mayorista,CABA,81.00,912833.45,728758.00,184075.45,0.2017,11269.55,8997.01,0.0076,0,0.00,,
-C0131,Tostado Coghlan II,Mayorista,CABA,92.00,1065186.83,888354.00,176832.83,0.1660,11578.12,9656.02,0.0088,0,0.00,MEDIUM,Preparar propuesta con menor descuento o mix de productos de mayor margen.
-C0111,Cafe Devoto II,Mayorista,CABA,87.00,925579.24,755796.00,169783.24,0.1834,10638.84,8687.31,0.0077,0,0.00,MEDIUM,"En la proxima reposicion, ofrecer alternativas de mayor margen antes de repetir descuento."
-C0110,Panaderia Devoto,Mayorista,CABA,92.00,1054060.74,885704.00,168356.74,0.1597,11457.18,9627.22,0.0087,0,0.00,MEDIUM,Preparar propuesta con menor descuento o mix de productos de mayor margen.
-C0103,Coffee Lab Belgrano II,Mayorista,CABA,106.00,1017630.94,851523.00,166107.94,0.1632,9600.29,8033.24,0.0084,1,-34624.64,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
-C0123,La Ventanita de Almagro II,Mayorista,CABA,97.00,953538.62,792301.00,161237.62,0.1691,9830.30,8168.05,0.0079,2,-67272.40,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
-C0124,Coffee Lab Flores,Mayorista,CABA,95.00,961426.21,801447.00,159979.21,0.1664,10120.28,8436.28,0.0080,0,0.00,MEDIUM,"En la proxima reposicion, ofrecer alternativas de mayor margen antes de repetir descuento."
 C0112,La Ventanita de Recoleta,Mayorista,CABA,98.00,1002580.10,843886.00,158694.10,0.1583,10230.41,8611.08,0.0083,0,0.00,MEDIUM,Preparar propuesta con menor descuento o mix de productos de mayor margen.
-C0109,Usina Colegiales II,Mayorista,CABA,72.00,729433.89,574472.00,154961.89,0.2124,10131.03,7978.78,0.0061,3,-137934.26,,
-C0118,Bar Saavedra,Mayorista,CABA,60.00,722288.55,573483.00,148805.55,0.2060,12038.14,9558.05,0.0060,2,-76003.97,,
-C0128,La Ventanita de San Telmo,Mayorista,CABA,62.00,738889.26,593173.00,145716.26,0.1972,11917.57,9567.31,0.0061,0,0.00,MEDIUM,"En la proxima reposicion, ofrecer alternativas de mayor margen antes de repetir descuento."
-C0127,Cafe Parque Chas II,Mayorista,CABA,67.00,720431.68,579398.00,141033.68,0.1958,10752.71,8647.73,0.0060,1,-11560.00,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
-C0136,Tostado Villa Urquiza,Mayorista,CABA,77.00,874627.51,734632.00,139995.51,0.1601,11358.80,9540.68,0.0073,1,-57707.74,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
-C0119,Coffee Lab Saavedra II,Mayorista,CABA,74.00,707183.95,572262.00,134921.95,0.1908,9556.54,7733.27,0.0059,1,-22100.00,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
-C0139,La Ventanita de Constitucion II,Mayorista,CABA,59.00,602102.80,471302.00,130800.80,0.2172,10205.13,7988.17,0.0050,0,0.00,,
-C0116,Cafe Caballito,Mayorista,CABA,54.00,661190.72,530571.00,130619.72,0.1976,12244.27,9825.39,0.0055,0,0.00,MEDIUM,"En la proxima reposicion, ofrecer alternativas de mayor margen antes de repetir descuento."
-C0117,El Almacen de Caballito II,Mayorista,CABA,57.00,539963.12,410359.00,129604.12,0.2400,9473.04,7199.28,0.0045,1,-11814.32,,
+C0134,Bar Agronomia,Mayorista,CABA,56.00,631697.77,531332.00,100365.77,0.1589,11280.32,9488.07,0.0052,0,0.00,MEDIUM,"En la proxima reposicion, ofrecer alternativas de mayor margen antes de repetir descuento."
 C0121,Panaderia Chacarita II,Mayorista,CABA,74.00,797248.81,670221.00,127027.81,0.1593,10773.63,9057.04,0.0066,1,-12054.96,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
 C0107,La Ventanita de Nunez II,Mayorista,CABA,72.00,783672.34,658830.00,124842.34,0.1593,10884.34,9150.42,0.0065,1,-24640.34,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
-C0115,Tostado Boedo II,Mayorista,CABA,45.00,534698.40,416953.00,117745.40,0.2202,11882.19,9265.62,0.0044,2,-62420.25,,
+C0110,Panaderia Devoto,Mayorista,CABA,92.00,1054060.74,885704.00,168356.74,0.1597,11457.18,9627.22,0.0087,0,0.00,MEDIUM,Preparar propuesta con menor descuento o mix de productos de mayor margen.
 C0132,Cafe Barracas,Mayorista,CABA,64.00,726752.31,610624.00,116128.31,0.1598,11355.50,9541.00,0.0060,1,-44200.00,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
-C0105,Panaderia Villa Crespo II,Mayorista,CABA,64.00,594290.12,479593.00,114697.12,0.1930,9285.78,7493.64,0.0049,1,-12888.79,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
-C0134,Bar Agronomia,Mayorista,CABA,56.00,631697.77,531332.00,100365.77,0.1589,11280.32,9488.07,0.0052,0,0.00,MEDIUM,"En la proxima reposicion, ofrecer alternativas de mayor margen antes de repetir descuento."
-C0114,Usina Boedo,Mayorista,CABA,40.00,436273.82,344814.00,91459.82,0.2096,10906.85,8620.35,0.0036,0,0.00,,
+C0136,Tostado Villa Urquiza,Mayorista,CABA,77.00,874627.51,734632.00,139995.51,0.1601,11358.80,9540.68,0.0073,1,-57707.74,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
+C0103,Coffee Lab Belgrano II,Mayorista,CABA,106.00,1017630.94,851523.00,166107.94,0.1632,9600.29,8033.24,0.0084,1,-34624.64,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
+C0131,Tostado Coghlan II,Mayorista,CABA,92.00,1065186.83,888354.00,176832.83,0.1660,11578.12,9656.02,0.0088,0,0.00,MEDIUM,Preparar propuesta con menor descuento o mix de productos de mayor margen.
+C0124,Coffee Lab Flores,Mayorista,CABA,95.00,961426.21,801447.00,159979.21,0.1664,10120.28,8436.28,0.0080,0,0.00,MEDIUM,"En la proxima reposicion, ofrecer alternativas de mayor margen antes de repetir descuento."
+C0123,La Ventanita de Almagro II,Mayorista,CABA,97.00,953538.62,792301.00,161237.62,0.1691,9830.30,8168.05,0.0079,2,-67272.40,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
+C0101,El Almacen de Palermo II,Mayorista,CABA,102.00,1093361.08,908248.00,185113.08,0.1693,10719.23,8904.39,0.0091,2,-101637.90,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
 C0102,Bar Belgrano,Mayorista,CABA,43.00,439851.71,364121.00,75730.71,0.1722,10229.11,8467.93,0.0037,1,-56465.50,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
+C0133,El Almacen de Barracas II,Mayorista,CABA,102.00,1064368.03,870337.00,194031.03,0.1823,10434.98,8532.72,0.0088,0,0.00,MEDIUM,Preparar propuesta con menor descuento o mix de productos de mayor margen.
+C0111,Cafe Devoto II,Mayorista,CABA,87.00,925579.24,755796.00,169783.24,0.1834,10638.84,8687.31,0.0077,0,0.00,MEDIUM,"En la proxima reposicion, ofrecer alternativas de mayor margen antes de repetir descuento."
+C0104,Tostado Villa Crespo,Mayorista,CABA,112.00,1194513.40,974159.00,220354.40,0.1845,10665.30,8697.85,0.0099,2,-45674.64,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
+C0119,Coffee Lab Saavedra II,Mayorista,CABA,74.00,707183.95,572262.00,134921.95,0.1908,9556.54,7733.27,0.0059,1,-22100.00,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
+C0105,Panaderia Villa Crespo II,Mayorista,CABA,64.00,594290.12,479593.00,114697.12,0.1930,9285.78,7493.64,0.0049,1,-12888.79,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
+C0127,Cafe Parque Chas II,Mayorista,CABA,67.00,720431.68,579398.00,141033.68,0.1958,10752.71,8647.73,0.0060,1,-11560.00,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
+C0108,Coffee Lab Colegiales,Mayorista,CABA,98.00,1125314.51,904603.00,220711.51,0.1961,11482.80,9230.64,0.0093,1,-36222.71,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
+C0128,La Ventanita de San Telmo,Mayorista,CABA,62.00,738889.26,593173.00,145716.26,0.1972,11917.57,9567.31,0.0061,0,0.00,MEDIUM,"En la proxima reposicion, ofrecer alternativas de mayor margen antes de repetir descuento."
+C0116,Cafe Caballito,Mayorista,CABA,54.00,661190.72,530571.00,130619.72,0.1976,12244.27,9825.39,0.0055,0,0.00,MEDIUM,"En la proxima reposicion, ofrecer alternativas de mayor margen antes de repetir descuento."
 C0122,El Almacen de Almagro,Mayorista,CABA,20.00,259480.98,208003.00,51477.98,0.1984,12974.05,10400.15,0.0022,2,-83259.60,MEDIUM,Revisar devoluciones y rotacion antes de renovar condiciones comerciales.
+C0126,Panaderia Parque Chas,Mayorista,CABA,87.00,994538.26,794363.00,200175.26,0.2013,11431.47,9130.61,0.0083,0,0.00,,
+C0100,Cafe Palermo,Mayorista,CABA,81.00,912833.45,728758.00,184075.45,0.2017,11269.55,8997.01,0.0076,0,0.00,,
+C0120,Tostado Chacarita,Mayorista,CABA,115.00,1261129.76,1005808.00,255321.76,0.2025,10966.35,8746.16,0.0105,1,-23120.00,,
+C0118,Bar Saavedra,Mayorista,CABA,60.00,722288.55,573483.00,148805.55,0.2060,12038.14,9558.05,0.0060,2,-76003.97,,
+C0129,Bar San Telmo II,Mayorista,CABA,90.00,1052014.53,834936.00,217078.53,0.2063,11689.05,9277.07,0.0087,1,-49359.47,,
+C0114,Usina Boedo,Mayorista,CABA,40.00,436273.82,344814.00,91459.82,0.2096,10906.85,8620.35,0.0036,0,0.00,,
+C0109,Usina Colegiales II,Mayorista,CABA,72.00,729433.89,574472.00,154961.89,0.2124,10131.03,7978.78,0.0061,3,-137934.26,,
+C0139,La Ventanita de Constitucion II,Mayorista,CABA,59.00,602102.80,471302.00,130800.80,0.2172,10205.13,7988.17,0.0050,0,0.00,,
+C0135,Coffee Lab Agronomia II,Mayorista,CABA,68.00,838888.64,654395.00,184493.64,0.2199,12336.60,9623.46,0.0070,1,-64911.34,,
+C0115,Tostado Boedo II,Mayorista,CABA,45.00,534698.40,416953.00,117745.40,0.2202,11882.19,9265.62,0.0044,2,-62420.25,,
+C0138,El Almacen de Constitucion,Mayorista,CABA,106.00,1183240.09,919406.00,263834.09,0.2230,11162.64,8673.64,0.0098,0,0.00,,
+C0125,Usina Flores II,Mayorista,CABA,87.00,897517.01,691521.00,205996.01,0.2295,10316.29,7948.52,0.0074,0,0.00,,
+C0113,Bar Recoleta II,Mayorista,CABA,86.00,972388.87,748922.00,223466.87,0.2298,11306.85,8708.40,0.0081,1,-62146.80,,
+C0130,Usina Coghlan,Mayorista,CABA,79.00,924777.30,711723.00,213054.30,0.2304,11706.04,9009.15,0.0077,0,0.00,,
+C0106,El Almacen de Nunez,Mayorista,CABA,103.00,1156544.21,889679.00,266865.21,0.2307,11228.58,8637.66,0.0096,0,0.00,,
+C0137,Panaderia Villa Urquiza II,Mayorista,CABA,89.00,940909.04,723201.00,217708.04,0.2314,10572.01,8125.85,0.0078,1,-25964.53,,
+C0117,El Almacen de Caballito II,Mayorista,CABA,57.00,539963.12,410359.00,129604.12,0.2400,9473.04,7199.28,0.0045,1,-11814.32,,
+C9001,CONSUMIDOR FINAL,Local,CABA,1187.00,11102141.30,5400277.00,5701864.30,0.5136,9353.11,4549.52,0.0921,0,0.00,,
+C9002,VENTA ONLINE,Ecommerce,,4180.00,32659850.64,14738397.00,17921453.64,0.5487,7813.36,3525.93,0.2710,0,0.00,,

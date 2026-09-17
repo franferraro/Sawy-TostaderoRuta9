@@ -329,7 +329,14 @@ def build_dimension_report(
                 )
             )
 
-    output_rows.sort(key=lambda r: decimal_value(r["margen_bruto"]), reverse=True)
+    severity_order = {"CRITICAL": 0, "HIGH": 1, "MEDIUM": 2, "": 3, "SIN_DATOS": 4}
+    output_rows.sort(
+        key=lambda r: (
+            severity_order.get(str(r["alerta_margen"]), 9),
+            decimal_value(str(r["margen_bruto_pct"])),
+            -decimal_value(str(r["ventas_netas"])),
+        )
+    )
     fieldnames = group_fields + [
         "unidades",
         "ventas_netas",
