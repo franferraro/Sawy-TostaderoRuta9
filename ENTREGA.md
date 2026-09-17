@@ -120,13 +120,4 @@ Abrir:
 http://localhost:8000/app_runtime/index.html
 ```
 
-El comando `run_all.py` regenera:
-
-```text
-data/stage/
-data/clean/
-data/reports/
-site/dist/
-```
-
 No requiere instalar dependencias externas.

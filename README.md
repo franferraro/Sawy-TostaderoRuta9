@@ -43,16 +43,6 @@ En macOS tambien se puede usar:
 ./abrir_dashboard.command
 ```
 
-## Que se recalcula
-
-`run_all.py` ejecuta todo el flujo de punta a punta. La separacion por capas permite ubicar que parte cambia cuando se ajusta una regla:
-
-- Si cambian los exports originales, se regenera todo: `stage`, `clean`, `reports` y visualizacion.
-- Si cambia una regla de tipado o validacion inicial, se recalcula desde `stage`.
-- Si cambia una regla de negocio, como normalizacion de codigos o tratamiento de notas de credito, se recalcula desde `clean`.
-- Si cambian metricas, umbrales o acciones sugeridas, se recalcula `reports` y la salida publicada.
-- Si cambia solo el diseño o texto del dashboard, no hace falta recalcular datos.
-
 ## Flujo de datos
 
 ```text
