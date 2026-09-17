@@ -87,8 +87,12 @@ def margin_action(
     if entity_type == "canal":
         channel = context.get("condicion_comercial", "")
         if channel == "Distribuidor":
-            return "Renegociar descuento, precio minimo y flete absorbido del canal."
+            if level in {"CRITICAL", "HIGH"}:
+                return "Renegociar descuento, precio minimo y flete absorbido del canal."
+            return "Revisar condiciones del canal antes de empujar mas volumen."
         if channel == "Mayorista":
+            if level in {"CRITICAL", "HIGH"}:
+                return "Renegociar escala de descuentos y condiciones por volumen."
             return "Revisar escala de descuentos y condiciones por volumen."
         return "Revisar condiciones comerciales del canal."
     if entity_type == "cliente":
@@ -96,7 +100,9 @@ def margin_action(
         sales = metrics["ventas_netas"] if metrics else Decimal("0")
         credit_notes = metrics["notas_credito"] if metrics else 0
         if channel == "Distribuidor":
-            return "Agendar renegociacion: revisar descuento, volumen minimo, lista de precios y flete absorbido."
+            if level in {"CRITICAL", "HIGH"}:
+                return "Agendar renegociacion: revisar descuento, volumen minimo, lista de precios y flete absorbido."
+            return "Revisar condiciones del cliente antes de renovar descuento o volumen minimo."
         if credit_notes:
             return "Revisar devoluciones y rotacion antes de renovar condiciones comerciales."
         if sales >= Decimal("1000000"):
